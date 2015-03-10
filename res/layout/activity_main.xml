@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+  <RelativeLayout 
+    android:id="@+id/tab01"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     
+    
+>
+
+        <Button
+            android:id="@+id/bn11"
+            android:layout_width="158.8dp"
+            android:layout_height="wrap_content"
+           
+            android:text="@string/kongzhi" />
+
+        <Button
+            android:id="@+id/bn8"
+            android:layout_width="158.8dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/bn11"
+            android:layout_toRightOf="@+id/bn11"
+           
+             
+            android:text="@string/celiang" />
+       
+</RelativeLayout>
+    
+
+    <TableLayout
+        android:id="@+id/tab02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="2"
+        android:stretchColumns="1"
+        
+         >
+
+        <Button
+            android:id="@+id/bn12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+             
+            android:text="@string/lianjie" />
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bn1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                 
+                android:text="@string/message" />
+
+            <Button
+                android:id="@+id/bn2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:text="@string/message1" />
+
+            <Button
+                android:id="@+id/bn3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                
+                android:text="@string/message0" />
+        </TableRow>
+
+      
+    </TableLayout>
+    <TextView
+        android:id="@+id/bn13"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/fuwuqi" />
+       
+
+</LinearLayout>

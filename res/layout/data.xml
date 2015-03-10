@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+     >
+   
+    <RelativeLayout 
+    android:id="@+id/tab01"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+      
+>
+
+        <Button
+            android:id="@+id/bn11"
+            android:layout_width="158.8dp"
+            android:layout_height="wrap_content"
+            
+            android:text="@string/kongzhi" />
+
+        <Button
+            android:id="@+id/bn8"
+            android:layout_width="158.8dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/bn11"
+            android:layout_toRightOf="@+id/bn11"
+           
+            android:text="@string/celiang" />
+       
+</RelativeLayout>
+    <TextView 
+        android:id="@+id/bn9"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+       
+         android:text="@string/fuwuqi" />
+        
+    
+    <Button
+        android:id="@+id/bn4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message2" />
+
+    <Button
+        android:id="@+id/bn5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message3" />
+
+    <Button
+        android:id="@+id/bn6"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message4" />
+    
+    <Button
+        android:id="@+id/bn10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xuanxiang" />
+
+</TableLayout>
