@@ -4,6 +4,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+
+    
     
   <RelativeLayout 
     android:id="@+id/tab01"
@@ -13,78 +15,122 @@
      
     
 >
-
-        <Button
-            android:id="@+id/bn11"
-            android:layout_width="158.8dp"
-            android:layout_height="wrap_content"
-           
-            android:text="@string/kongzhi" />
-
-        <Button
+         <Button
             android:id="@+id/bn8"
-            android:layout_width="158.8dp"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/bn11"
-            android:layout_toRightOf="@+id/bn11"
-           
-             
-            android:text="@string/celiang" />
-       
-</RelativeLayout>
-    
-
-    <TableLayout
-        android:id="@+id/tab02"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:shrinkColumns="2"
-        android:stretchColumns="1"
-        
-         >
-
-        <Button
-            android:id="@+id/bn12"
+            style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            
-             
-            android:text="@string/lianjie" />
+            android:layout_toStartOf="@+id/bn11"
+            android:layout_toLeftOf="@+id/bn11"
+            android:text="@string/shezhi" />
+         <Button
+            android:id="@+id/bn9"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" 
+            android:text="@string/celiang" />
+         <Button
+	        android:id="@+id/button1"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toStartOf="@+id/bn8"
+            android:layout_toLeftOf="@+id/bn8"
+	         android:text="@string/benji" />
 
-        <TableRow>
+         <Button
+             android:id="@+id/bn11"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toStartOf="@+id/bn9"
+             android:layout_toLeftOf="@+id/bn9"
+             android:text="@string/kongzhi" />
+       
+</RelativeLayout>
 
-            <Button
-                android:id="@+id/bn1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                
-                 
-                android:text="@string/message" />
+<!-- 以上是界面第一行 --> 
+  
+  
+  
+  <RelativeLayout 
+    android:id="@+id/tab02"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     
+    
+>
+ <TextView
+        android:id="@+id/View1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        style="?android:attr/buttonStyleSmall"
+        
+        android:text="@string/dizhi" />
 
-            <Button
-                android:id="@+id/bn2"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                
-                android:text="@string/message1" />
-
-            <Button
-                android:id="@+id/bn3"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                
-                
-                android:text="@string/message0" />
-        </TableRow>
-
-      
-    </TableLayout>
     <TextView
-        android:id="@+id/bn13"
+        android:id="@+id/View2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:text="@string/fuwuqi" />
+        android:layout_toEndOf="@+id/View1" 
+        android:layout_toRightOf="@+id/View1"
+        android:background="@drawable/setbar_bg"
+        android:text="" />
        
+</RelativeLayout>
+  
+<!-- 以上是界面第2行 -->  
+    
+   
+     <RelativeLayout 
+    android:id="@+id/tab03"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     
+    
+>
+ <TextView
+        android:id="@+id/View3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        style="?android:attr/buttonStyleSmall"
+        android:text="@string/duankou" />
+
+    <TextView
+        android:id="@+id/View4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/View3" 
+        android:layout_toRightOf="@+id/View3"
+        android:background="@drawable/setbar_bg"
+        android:text="" />
+       
+</RelativeLayout>
+  
+<!-- 以上是界面第3行 -->  
+
+
+   
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/setbar_bg"
+        android:text="@string/fuwuqi" />
+    <Button
+            android:id="@+id/bn18"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:text="@string/lianjie" />
 
 </LinearLayout>

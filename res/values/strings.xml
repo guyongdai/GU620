@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">GU620</string>
+    <string name="app_name">ModBus</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="message">startGU620</string>
-    <string name="message0">closeGU620</string>
-    <string name="message1">AUTO</string>
-    <string name="message2">油压</string>
-    <string name="message3">水温</string>
-    <string name="message4">转速</string>
-    <string name="message5">返回</string>
     <string name="kongzhi">控制面板</string>
     <string name="celiang">测量面板</string>
-    <string name="xuanxiang">更多选项</string>
-    <string name="lianjie">连接服务器 </string>
-    <string name="fuwuqi">服务器信息： </string>
+    <string name="lianjie">点击连接服务器</string>
+    <string name="shezhi">设置面板</string>
+    <string name="benji">GU620通信连接</string>
+    <string name="fuwuqi">与服务器通信状态：</string>
+    <string name="dizhi">服务器IP</string>
+    <string name="duankou">通信端口</string>
 </resources>
