@@ -12,4 +12,8 @@
     <string name="fuwuqi">与服务器通信状态：</string>
     <string name="dizhi">服务器IP</string>
     <string name="duankou">通信端口</string>
+    <string name="xuanze">点击选择测量项目</string>
+    <string name="shishiceliang">实时测量值</string>
+    <string name="liangcheng">量程</string>
+    <string name="biaoding">标定值</string>
 </resources>

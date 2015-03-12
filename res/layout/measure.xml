@@ -1,16 +1,331 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.yongdai.modbus.MainActivity" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    
+ <!-- 以下是界面第1行 -->    
+  <RelativeLayout 
+    android:id="@+id/tab01"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     
+    
+>
+         <Button
+            android:id="@+id/bn8"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/bn11"
+            android:layout_toLeftOf="@+id/bn11"
+            android:text="@string/shezhi" />
+         <Button
+            android:id="@+id/bn9"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" 
+            android:text="@string/celiang" />
+         <Button
+	        android:id="@+id/button1"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toStartOf="@+id/bn8"
+            android:layout_toLeftOf="@+id/bn8"
+	         android:text="@string/benji" />
+
+         <Button
+             android:id="@+id/bn11"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toStartOf="@+id/bn9"
+             android:layout_toLeftOf="@+id/bn9"
+             android:text="@string/kongzhi" />
+       
+</RelativeLayout>
+
+<!-- 以下是界面第2行 --> 
+
+
+<RelativeLayout 
+    android:id="@+id/tab02"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+<Button
+     android:id="@+id/bn19"
+     android:layout_width="wrap_content"
+     style="?android:attr/buttonStyleSmall"
+     android:layout_height="40dp"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentEnd="true" 
+     android:text="@string/xuanze"/>
+  <TextView
+      android:id="@+id/View6"
+      android:layout_width="170dp"
+      android:layout_height="40dp"
+      android:layout_toLeftOf ="@id/bn19"
+       android:layout_toStartOf="@id/bn19" 
+      android:background="@drawable/setbar_bg" />
+    
+ 
+</RelativeLayout>
+
+<!-- 以下是界面第3行 -->
+
+
+
+<!-- 数据表格区--> 
+<!-- 作为空白间隔区-->  
+<RelativeLayout 
+    android:id="@+id/dai00"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+ <TextView
+      android:id="@+id/gu0"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      />
 
 </RelativeLayout>
+
+<!-- 数据表格第1行填写对应标题-->  
+<RelativeLayout 
+    android:id="@+id/dai01"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+ <TextView
+      android:id="@+id/gu1"
+      android:layout_width="135dp"
+      android:layout_height="25dp"
+      />
+ <TextView
+      android:id="@+id/gu2"
+      android:layout_width="85dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true" 
+      android:text="@string/shishiceliang" 
+      />
+  <TextView
+      android:id="@+id/gu3"
+      android:layout_width="40dp"
+      android:layout_height="25dp"
+      android:layout_toRightOf="@id/gu1"      
+      android:layout_toEndOf="@id/gu1"
+      
+      android:text="@string/liangcheng"
+      />
+</RelativeLayout>
+
+<!-- 数据表格第2行填写对应标题--> 
+ 
+<RelativeLayout 
+    android:id="@+id/dai02"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+ <TextView
+      android:id="@+id/gu4"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:background="@drawable/setbar_bg" />
+ <TextView
+      android:id="@+id/gu5"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true" 
+      android:background="@drawable/setbar_bg" />
+  <TextView
+      android:id="@+id/gu6"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:layout_toRightOf="@id/gu4"
+      
+      android:layout_toEndOf="@id/gu4"
+      android:background="@drawable/setbar_bg" />
+</RelativeLayout>
+
+<!-- 数据表格第3行填写数据-->  
+<RelativeLayout 
+    android:id="@+id/dai03"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+ <TextView
+      android:id="@+id/gu7"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:background="@drawable/setbar_bg" />
+ <TextView
+      android:id="@+id/gu8"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true" 
+      android:background="@drawable/setbar_bg" />
+  <TextView
+      android:id="@+id/gu9"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:layout_toRightOf="@id/gu7"
+      android:layout_toEndOf="@id/gu7"
+      android:background="@drawable/setbar_bg" />
+</RelativeLayout>
+
+<!-- 数据表格第4行填写数据-->  
+<RelativeLayout 
+    android:id="@+id/dai04"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+ <TextView
+      android:id="@+id/gu10"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:background="@drawable/setbar_bg" />
+ <TextView
+      android:id="@+id/gu11"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true" 
+      android:background="@drawable/setbar_bg" />
+  <TextView
+      android:id="@+id/gu12"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:layout_toRightOf="@id/gu10"
+      android:layout_toEndOf="@id/gu10"
+      android:background="@drawable/setbar_bg" />
+</RelativeLayout>
+
+<!-- 作为空白间隔区-->  
+<RelativeLayout 
+    android:id="@+id/dai000"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+ <TextView
+      android:id="@+id/gu00"
+      android:layout_width="75dp"
+      android:layout_height="25dp"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true" 
+      android:text="@string/biaoding"
+      />
+
+</RelativeLayout>
+
+<!-- 数据表格第5行填写数据-->  
+<RelativeLayout 
+    android:id="@+id/dai05"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+ <TextView
+      android:id="@+id/gu13"
+      android:layout_width="125dp"
+      android:layout_height="25dp"
+      android:background="@drawable/setbar_bg" />
+ <TextView
+      android:id="@+id/gu14"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true" 
+      android:background="@drawable/setbar_bg" />
+</RelativeLayout>
+
+<!-- 数据表格第6行填写数据-->  
+<RelativeLayout 
+    android:id="@+id/dai06"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+ <TextView
+      android:id="@+id/gu15"
+      android:layout_width="125dp"
+      android:layout_height="25dp"
+      android:background="@drawable/setbar_bg" />
+ <TextView
+      android:id="@+id/gu16"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true" 
+      android:background="@drawable/setbar_bg" />
+</RelativeLayout>
+
+<!-- 数据表格第7行填写数据-->  
+<RelativeLayout 
+    android:id="@+id/dai07"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+ <TextView
+      android:id="@+id/gu17"
+      android:layout_width="125dp"
+      android:layout_height="25dp"
+      android:background="@drawable/setbar_bg" />
+ <TextView
+      android:id="@+id/gu18"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true" 
+      android:background="@drawable/setbar_bg" />
+</RelativeLayout>
+
+<!-- 数据表格第8行填写数据-->  
+<RelativeLayout 
+    android:id="@+id/dai08"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   >
+
+ <TextView
+      android:id="@+id/gu19"
+      android:layout_width="125dp"
+      android:layout_height="25dp"
+      android:background="@drawable/setbar_bg" />
+ <TextView
+      android:id="@+id/gu20"
+      android:layout_width="100dp"
+      android:layout_height="25dp"
+      android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true" 
+      android:background="@drawable/setbar_bg" />
+</RelativeLayout>
+<!-- 数据表格区--> 
+</LinearLayout>
